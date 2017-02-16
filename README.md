@@ -12,9 +12,9 @@ npm install --save html-to-printer
 ## Usage
 
 ```js
-import { htmlToPrinter } from 'html-to-printer'
+import { print } from 'html-to-printer'
 
-htmlToPrinter(`<div class="report-printout"> ... </div>`)
+print(`<div class="report-printout"> ... </div>`)
 ```
 
 ## How it works
