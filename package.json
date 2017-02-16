@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc && tsc --project tsconfig.d.json && webpack",
     "lint": "tslint --project .",
-    "test": "tsc && npm run lint",
+    "test": "npm run build && npm run lint",
     "watch": "npm-run-all --parallel watch:*",
     "watch:tsc": "tsc --watch",
     "watch:tscd": "tsc --watch --project tsconfig.d.json",
