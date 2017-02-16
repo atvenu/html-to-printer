@@ -22,7 +22,7 @@ const PRINT_CSS = `
   }
 `
 
-export function htmlToPrinter(html: string): void {
+export function print(html: string): void {
   const styleEl = document.createElement('style')
   styleEl.id = STYLE_ELEMENT_ID
   styleEl.type = 'text/css'

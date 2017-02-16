@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    "alwaysStrict": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "react",
     "lib": [
       "dom",
@@ -16,10 +18,12 @@
     "noUnusedParameters": true,
     "preserveConstEnums": true,
     "rootDir": ".",
+    "skipLibCheck": true,
     "strictNullChecks": true,
     "target": "es6"
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "webpack.config.ts"
   ]
 }

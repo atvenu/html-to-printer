@@ -1,1 +1,1 @@
-export declare function printHtml(html: string): void;
+export declare function print(html: string): void;

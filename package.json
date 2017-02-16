@@ -2,20 +2,25 @@
   "name": "html-to-printer",
   "desription": "Browser print preview with custom HTML",
   "version": "1.0.0",
-  "main": "lib/index.js",
+  "main": "dist/html-to-printer.js",
   "typings": "lib/index.d.ts",
   "author": "Chris Khoo",
   "license": "Apache2",
   "scripts": {
-    "build": "tsc && tsc --project tsconfig.d.json",
+    "build": "tsc && tsc --project tsconfig.d.json && webpack",
     "lint": "tslint --project .",
-    "test": "npm run lint",
+    "test": "tsc && npm run lint",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:tsc": "tsc --watch"
+    "watch:tsc": "tsc --watch",
+    "watch:tscd": "tsc --watch --project tsconfig.d.json",
+    "watch:webpack": "webpack --watch"
   },
   "devDependencies": {
+    "@types/node": "^7.0.5",
+    "@types/webpack": "^2.2.6",
     "npm-run-all": "^4.0.1",
     "tslint": "^4.4.2",
-    "typescript": "^2.0.3"
+    "typescript": "^2.0.3",
+    "webpack": "^2.2.1"
   }
 }
