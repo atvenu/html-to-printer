@@ -11,16 +11,4 @@ module.exports = {
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist'),
   },
-  externals: {
-    react: {
-      commonjs: 'react',
-      commonjs2: 'react',
-      root: 'React',
-    },
-    'react-dom': {
-      commonjs: 'react-dom',
-      commonjs2: 'react-dom',
-      root: 'ReactDOM',
-    },
-  },
 }

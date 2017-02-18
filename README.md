@@ -1,4 +1,7 @@
 # html-to-printer
+
+Print custom HTML on the client-side
+
 Exposes a function that takes in a HTML string, and opens a print preview window with its contents,
 respecting the CSS of that page.
 
@@ -26,7 +29,3 @@ It does this by:
 4. removing the element and putting everything else back to normal.
 
 This generally happens fast enough that you don't see any flicker in your browser window.
-
-## License
-
-Apache-2.0
