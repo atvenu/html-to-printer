@@ -27,3 +27,5 @@ It does this by:
 2. hiding everything else for the print media query,
 3. opening print preview to display just the newly created element, and
 4. removing the element and putting everything else back to normal.
+
+Some of this cleverness is achieved with print/screen media queries.
