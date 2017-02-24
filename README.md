@@ -24,8 +24,6 @@ print(`<div class="report-printout"> ... </div>`)
 It does this by:
 
 1. creating an element containing the HTML string,
-2. hiding everything else,
-3. opening print preview which displays just the newly created element, and
+2. hiding everything else for the print media query,
+3. opening print preview to display just the newly created element, and
 4. removing the element and putting everything else back to normal.
-
-This generally happens fast enough that you don't see any flicker in your browser window.
