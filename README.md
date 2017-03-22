@@ -1,5 +1,7 @@
 # html-to-printer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/coatue-oss/html-to-printer.svg)](https://greenkeeper.io/)
+
 Print custom HTML on the client-side
 
 Exposes a function that takes in a HTML string, and opens a print preview window with its contents,
