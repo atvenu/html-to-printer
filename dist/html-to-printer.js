@@ -84,26 +84,26 @@ return /******/ (function(modules) { // webpackBootstrap
 
 const PRINT_ELEMENT_ID = 'print-area';
 const STYLE_ELEMENT_ID = 'print-area-css';
-const PRINT_CSS = `
-  @media screen {
-    #print-area {
-      display: none;
-    }
-  }
-  @media print {
-    body * {
-      visibility: hidden;
-    }
-    #print-area, #print-area * {
-      visibility: visible;
-    }
-    #print-area {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
-`;
+const PRINT_CSS = " \
+  @media screen { \
+    #print-area { \
+      display: none; \
+    } \
+  } \
+  @media print { \
+    body * { \
+      visibility: hidden; \
+    } \
+    #print-area, #print-area * { \
+      visibility: visible; \
+    } \
+    #print-area { \
+      position: absolute; \
+      left: 0; \
+      top: 0; \
+    } \
+  } \
+";
 function print(html) {
     const styleEl = document.createElement('style');
     styleEl.id = STYLE_ELEMENT_ID;
@@ -115,7 +115,7 @@ function print(html) {
     printEl.innerHTML = html;
     document.body.appendChild(printEl);
     window.print();
-    setTimeout(() => {
+    setTimeout(function() {
         // need to remove print elements on the next tick otherwise print preview doesn't always display styles
         styleEl.remove();
         printEl.remove();
